@@ -25,6 +25,7 @@ loop do                                             # Server runs forever
     success_header = []
     success_header << "HTTP/1.1 200 OK"
     success_header << "Content-Type: text/html" # should reflect the appropriate content type (HTML, CSS, text, etc)
+    success_header << "Content-Type: text/css" # should reflect the appropriate content type (HTML, CSS, text, etc)
     success_header << "Content-Length: #{response_body.length}" # should be the actual size of the response body
     success_header << "Connection: close"
     header = success_header.join("\r\n")
